@@ -11,6 +11,7 @@ global.APIs = {
 	xziyy: 'https://ziy.herokuapp.com',
 	danisenpai: 'https://x-restapi.herokuapp.com',
 	leyscoders: 'https://leyscoders-api.herokuapp.com',
+        Adiofficial: 'http://api.adiofficial.xyz',
 }
 
 //━━━━━━━━━━━━━━━[ APIKEY ]━━━━━━━━━━━━━━━━━//
@@ -20,8 +21,9 @@ global.APIKeys = {
 	'https://api.violetics.pw': 'beta',
 	'https://ziy.herokuapp.com': 'xZiyy',
 	'https://api-invibot.herokuapp.com': 'APIKEY',
-    'https://x-restapi.herokuapp.com': 'BETA',
+        'https://x-restapi.herokuapp.com': 'BETA',
 	'https://leyscoders-api.herokuapp.com': 'IkyOgiwara',
+        'http://api.adiofficial.xyz': 'PutriCntq',
 }
 
 //━━━━━━━━━━━━━━━[ OTHER ]━━━━━━━━━━━━━━━━━//
