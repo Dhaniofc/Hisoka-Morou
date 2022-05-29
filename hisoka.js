@@ -4,6 +4,7 @@
 //Dan Gw Mengucapkan Terimakasih 🙏
 //━━━━━━━━━━━━━━━[ THANKS TO FOR ]━━━━━━━━━━━━━━━━━//
 //DHANIOFC
+//OnX Dz
 //DIKAARDNT
 //SANZY
 //Note:Jangan DiJual Belikan Nih Sc Ya Guys
@@ -149,7 +150,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await hisoka.setStatus(`${hisoka.user.name} | Runtime : ${runtime(uptime)}`)
+		await hisoka.setStatus(`${botname} ${runtime(uptime)}`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -3208,6 +3209,14 @@ case 'list': case 'menu': case 'help': case '?': {
 │⭔ ${prefix}setexif
 │⭔ ${prefix}setmenu [option]
 │
+└───────⭓
+
+┌──⭓ *Tq To*
+│ DHANIOFC
+│ OnX Dz
+│ DIKAARDNT
+│ SANZY
+│ Fatih A
 └───────⭓`
                 let btn = [{
                                 urlButton: {
