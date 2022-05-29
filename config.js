@@ -22,7 +22,7 @@ global.APIKeys = {
 	'https://api.violetics.pw': 'beta',
         'https://api.lolhuman.xyz': 'You Apikey',
 	'https://ziy.herokuapp.com': 'xZiyy',
-	'https://api-invibot.herokuapp.com': 'APIKEY',
+	'https://api-invibot.herokuapp.com': 'ae0184cfdb19e8c46728a104',
         'https://x-restapi.herokuapp.com': 'BETA',
 	'https://leyscoders-api.herokuapp.com': 'IkyOgiwara',
         'http://api.adiofficial.xyz': 'PutriCntq',
@@ -30,7 +30,7 @@ global.APIKeys = {
 
 //━━━━━━━━━━━━━━━[ OTHER ]━━━━━━━━━━━━━━━━━//
 global.owner = ['6285773557984','6281382420312','6288292024190','6285335877178']
-global.premium = ['6288292024190']
+global.premium = ['6288292024190','6285335877178']
 global.packname = 'Hisoka Morrow'
 global.author = 'WhatsApp Bot'
 global.sessionName = 'hisoka'
