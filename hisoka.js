@@ -2896,44 +2896,43 @@ case 'menu': {
 anu = `
 Hallo Kak ${pushname}
 `
-         urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '${owner}'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Contact Owner',
-                                    id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'List Command',
-',
-                                    id: 'allmenu'
-                                }
-                            }]
-                         let setbot = db.data.settings[botNumber]
-                        if (setbot.templateImage) {
-                        hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
-                        } else if (setbot.templateGif) {
-                        hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn)
-                        } else if (setbot.templateVid) {
-                        hisoka.send5ButVid(m.chat, anu, hisoka.user.name, global.visoka, btn)
-                        } else if (setbot.templateMsg) {
-                        hisoka.send5ButMsg(m.chat, anu, hisoka.user.name, btn)
-                        }
-                     }
-            break
+urlButton: {
+displayText: 'Source Code',
+url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+}
+}, {
+callButton: {
+displayText: 'Number Phone Owner',
+phoneNumber: '${owner}'
+}
+}, {
+quickReplyButton: {
+displayText: 'Status Bot',
+id: 'ping'
+}
+}, {
+quickReplyButton: {
+displayText: 'Contact Owner',
+id: 'owner'
+}  
+}, {
+quickReplyButton: {
+displayText: 'List Command',
+id: 'allmenu'
+}
+}]
+let setbot = db.data.settings[botNumber]
+if (setbot.templateImage) {
+hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
+} else if (setbot.templateGif) {
+hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn)
+} else if (setbot.templateVid) {
+hisoka.send5ButVid(m.chat, anu, hisoka.user.name, global.visoka, btn)
+} else if (setbot.templateMsg) {
+hisoka.send5ButMsg(m.chat, anu, hisoka.user.name, btn)
+}
+}
+break
 case 'allmenu': {
                 anu = `┌──⭓ *Group Menu*
 │
