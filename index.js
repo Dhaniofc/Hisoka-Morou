@@ -71,7 +71,7 @@ async function startHisoka() {
     const hisoka = hisokaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Hisoka Multi Device','Safari','1.0.0'],
+        browser: ['Hisoka Recode V2','Safari','1.0.0'],
         auth: state
     })
 
