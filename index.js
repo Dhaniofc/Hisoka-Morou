@@ -147,16 +147,29 @@ async function startHisoka() {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
-                if (anu.action == 'add') {
-                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}` })
+                    let nama = await hisoka.getName(num)
+memb = metadata.participants.length
+
+    Kon = await getBuffer(`https://api.lolhuman.xyz/api/base/welcome?apikey=${lolkey}&img1=${ppuser}&img2=${ppgroup}&background=${welcome}&username=${nama}&member=${encodeURIComponent(memb)}&groupname=${encodeURIComponent(metadata.subject)}`)
+Tol = await getBuffer(`https://api.lolhuman.xyz/api/base/leave?apikey=${lolkey}&img1=${ppuser}&img2=${ppgroup}&backg&username=${nama}&member=${encodeURIComponent(memb)}&groupname=${encodeURIComponent(metadata.subject)}`)
+ 
+
+                    if (anu.action == 'add') {
+                    hisoka.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}
+                    
+Description: ${metadata.desc}
+
+Welcome 👋`} )
                 } else if (anu.action == 'remove') {
-                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}` })
+                    hisoka.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}
+Good Bye 👋` })
                 }
             }
         } catch (err) {
             console.log(err)
         }
-    })
+    })	
+    
 	
     // Setting
     hisoka.decodeJid = (jid) => {
