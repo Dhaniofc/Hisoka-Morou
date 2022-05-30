@@ -558,7 +558,7 @@ hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd63401012
 }
 break
 case 'sc': {
-m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : 6281615075793 (Link Aja)\nSaweria : https://saweria.co/DikaArdnt\nPaypal : https://www.paypal.me/Cakhaho\n\n Dont Forget Donate')
+m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : ${owner} (Link Aja)\nSaweria : https://saweria.co/DikaArdnt\nPaypal : https://www.paypal.me/Cakhaho\n\n Dont Forget Donate')
 }
 break
 case 'chat': {
@@ -2110,7 +2110,7 @@ footer: 'Press The Button Below',
 buttons: buttons,
 headerType: 5
  }
-hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
+hisoka.sendMessage(m.chat, buttonMessage, { quoted: floc })
 }
 break
 case 'tiktokwm': case 'tiktokwatermark': {
@@ -2128,7 +2128,7 @@ footer: 'Press The Button Below',
 buttons: buttons,
 headerType: 5
 }
-hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
+hisoka.sendMessage(m.chat, buttonMessage, { quoted: floc })
 }
 break
             case 'tiktokmp3': case 'tiktokaudio': {
@@ -2684,11 +2684,12 @@ let latensi = speed() - timestamp
 neww = performance.now()
 oldd = performance.now()
 respon = `
-Kecepatan Respon ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
+🕛 Kecepatan Respon ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\n💬 Runtime : ${runtime(process.uptime())}
 
 💻 Info Server
 RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 
+📍 Memory Usage Node Js
 _NodeJS Memory Usaage_
 ${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}
 
@@ -2718,7 +2719,7 @@ if (stderr.trim()) m.reply(stderr)
 }
 break
 case 'owner': case 'creator': {
-hisoka.sendContact(m.chat, global.owner, m)
+hisoka.sendContact(m.chat, global.owner, floc)
 }
 break
 case 'playstore': {
@@ -2887,12 +2888,13 @@ break
                 ]
                 },
                 ]
-hisoka.sendListMsg(m.chat, `Please select the menu you want to change!`, hisoka.user.name, `Hello Owner !`, `Click Here`, sections, m)
+hisoka.sendListMsg(m.chat, `Please select the menu you want to change!`, hisoka.user.name, `Hello Owner !`, `Click Here`, sections, ftroli)
       }
    }
 break
 case 'list': case 'menu': case 'help': case '?': {
-                anu = `┌──⭓ *Group Menu*
+                anu = `
+┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
 │⭔ ${prefix}ephemeral [option]
