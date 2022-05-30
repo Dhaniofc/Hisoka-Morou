@@ -28,6 +28,8 @@ global.APIKeys = {
         'http://api.adiofficial.xyz': 'PutriCntq',
 }
 
+// Apikey Pisah
+lolkey = 'Atakbotz'
 //━━━━━━━━━━━━━━━[ OTHER ]━━━━━━━━━━━━━━━━━//
 global.owner = ['6285773557984','6281382420312','6288292024190','6285335877178']
 global.premium = ['6288292024190','6285335877178']
