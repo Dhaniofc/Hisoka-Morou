@@ -1,6 +1,6 @@
 {
   "name": "hisoka-morou",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "WhatsApp Using Lib Baileys Multi Device",
   "main": "index.js",
   "type": "commonjs",
@@ -18,10 +18,10 @@
     "bot-md",
     "multi-device"
   ],
-  "author": "Dika Ardnt.",
+  "author": "Dhani Ofc.",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.1.0",
+    "@adiwajshing/baileys": "^4.2.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
