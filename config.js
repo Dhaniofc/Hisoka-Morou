@@ -24,12 +24,12 @@ global.APIKeys = {
 	'https://ziy.herokuapp.com': 'xZiyy',
 	'https://api-invibot.herokuapp.com': 'ae0184cfdb19e8c46728a104',
         'https://x-restapi.herokuapp.com': 'BETA',
-	'https://leyscoders-api.herokuapp.com': 'IkyOgiwara',
-        'http://api.adiofficial.xyz': 'PutriCntq',
+	'https://leyscoders-api.herokuapp.com': 'you Apikey',
+        'http://api.adiofficial.xyz': 'you Apikey',
 }
 
 // Apikey Pisah
-lolkey = 'Apikey Li'
+lolkey = 'Apikey Lu'
 //━━━━━━━━━━━━━━━[ OTHER ]━━━━━━━━━━━━━━━━━//
 global.owner = ['6285773557984','6281382420312','6288292024190','6285335877178']
 global.premium = ['6288292024190','6285335877178']
